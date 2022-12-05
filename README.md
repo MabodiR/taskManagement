@@ -1,11 +1,4 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
 ## About Task Management
 
@@ -38,12 +31,33 @@ Requires Apache
 - **Run Composer install**
 - **Run cp .env.example .env**
 - **Run php artisan key:generate**
+- **Create Database named taskManagement**
+# DB Connection
+ DB_CONNECTION=mysql
+ DB_HOST=127.0.0.1
+ DB_PORT=3306
+ DB_DATABASE=taskManagement
+ DB_USERNAME=root
+ DB_PASSWORD=
 - **Run php artisan migrate**
 - **Run php artisan db:seed**
 - **Run php artisan serve**
 
-##.env
+## .env file
 
+## App time zone
+
+APP_TIMEZONE='Africa/Johannesburg'
+
+## Mail Connection 
+MAIL_MAILER=smtp
+MAIL_HOST=mail.mabodirofhiwa.co.za
+MAIL_PORT=465
+MAIL_USERNAME=calidad@mabodirofhiwa.co.za
+MAIL_PASSWORD="9%RLl_HOyV_l"
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_ADDRESS=calidad@mabodirofhiwa.co.za
+MAIL_FROM_NAME="${APP_NAME}"
 
 ## Users
 
